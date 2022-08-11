@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: '';
+}
+
+/* navigation design start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 14px gray;
+    padding: 0px 40px 0 40px;
+}
+
+/* -------nav header */
+.nav__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    cursor: pointer;
+}
+
+.nav__logo img{
+    transition: .4s;
+}
+
+.nav__logo img:hover{
+    transform: scaleY(1.2);
+}
+
+.nav__toggler{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+
+.nav__toggler:hover{
+    transform: scalex(1.2);
+    color: aqua;
+}
+
+/* ---------    toggler items    ---------------- */
+/* ---------navigation link's */
+
+.nav__menu{
+    background-color: '';
+}
+
+.nav__menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav__menu ul li{
+    margin: 0 10px 0 10px;
+    transition: .4s;
+}
+
+.nav__menu ul li:hover{
+    transform: scalex(1.2);
+}
+
+.nav__menu ul li a{
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+
+.nav__menu ul li a:hover{
+    color: rgb(0, 191, 255);
+}
+
+
+/* ---------navigation social icon's */
+
+.nav__social{
+    color: '';
+}
+
+.nav__social i{
+    font-size: 2rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav__social i:hover{
+    color: rgb(0, 191, 255);
+    transform: scalex(1.2);
+}
+
+
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    nav{
+        display: list-item;
+    }
+
+    /* toggler */
+
+    .nav__toggler{
+        display: block;
+    }
+
+    
+    /* link */
+
+    .nav__menu{
+        height: 0;
+        overflow: hidden;
+    }
+
+    .nav__menu__show{
+        height: 100%;
+        overflow: visible;
+    }
+
+
+    .nav__menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__menu ul li{
+        transition: .4s;
+        height: 40px;
+        line-height: 40px;
+    }
+    .nav__menu ul li:hover{
+        background-color: aqua;
+        transform: scaleX(1.2);
+        text-align: center;
+    }
+
+    /* social link */
+    .nav__social{
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .nav__social__show{
+        height: 100%;
+        overflow: visible;
+    }
+
+    .nav__social i:hover{
+        transform: scalex(1.2);
+    }
+}

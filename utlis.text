@@ -1,0 +1,26 @@
+<nav>
+        <div class="nav_header">
+            <img src="https://vanilla-js-basic-project-4-navbar.netlify.app/logo.svg" alt="">
+            <div class="toggler__button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- links -->
+        <div class="nav__menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- social link -->
+        <div class="social__link">
+            <i style="--clr : blue;" class="fa-brands fa-facebook"></i>
+            <i style="--clr : rgb(111, 181, 255);" class="fa-brands fa-twitter"></i>
+            <i style="--clr : rgb(157, 37, 0) ;" class="fa-brands fa-square-instagram"></i>
+            <i style="--clr: rgb(125, 255, 134);" class="fa-brands fa-square-whatsapp"></i>
+            <i style="--clr :rgb(111, 111, 111);" class="fa-solid fa-baby-carriage"></i>
+        </div>
+    </nav>
